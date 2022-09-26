@@ -2,6 +2,8 @@ from human import Human
 from ai import AI
 player1 = Human('Human')
 player2 = AI('AI')
+player3 = Human("Human-2")
+player4 = AI('AI-2')
 class Game:
     def __init__(self) -> None:
         pass
@@ -22,20 +24,36 @@ class Game:
         print('Rock crushes Scissors')
 
     def player_choice(self):
-       input("How many players will ne playing? 1, 2, or 3 for a surprise!!!!! ")
-       if input == 1:
+       user_input = int(input("How many players will be playing? 1, 2, or 3 for a surprise!!!!! "))
+       print('')
+       if user_input == 1:
             player1.human_gesture()
             player2.ai_gesture()
-       elif input == 2:
+       elif user_input == 2:
             player1.human_gesture()
-            player1.human_gesture
-       elif input == 3:
-            player2.ai_gesture
-            player2.ai_gesture
+            player1.human_gesture()
+       elif user_input == 3:
+            player2.ai_gesture()
+            player2.ai_gesture()
        else:
             print("Please type in a correct number")
-        
-            
+
+    
+    def choose_winner(self):
+        'Scissors' > 'Paper'
+        'Paper' > 'Rock'
+        'Rock' > 'Lizard'
+        'Lizard' > 'Spock'
+        'Spock' > 'Scissors'
+        'Scissors' > 'Lizard'
+        'Lizard' > 'Paper'
+        'Paper' > 'Spock'
+        'Spock' > 'Rock'
+        'Rock' > 'Scissors'
+    
+
+
+
         
             
         
