@@ -1,4 +1,4 @@
-import string
+
 from player import Player
 class Human(Player):
     def __init__(self, name) -> None:
@@ -14,5 +14,5 @@ class Human(Player):
         print('3 is for Lizard')
         print('4 is for Spock')
         print('')
-        choose_gesture = (input(f'Please choose your gesture. '))
-        print(f'{self.name} has chosen {self.gesture_list[int(choose_gesture)]}')
+        self.human_choice = (input(f'Please choose your gesture. '))
+        print(f'{self.name} has chosen {self.gesture_list[int(self.human_choice)]}')

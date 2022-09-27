@@ -31,10 +31,10 @@ class Game:
             player2.ai_gesture()
        elif user_input == 2:
             player1.human_gesture()
-            player1.human_gesture()
+            player3.human_gesture()
        elif user_input == 3:
             player2.ai_gesture()
-            player2.ai_gesture()
+            player4.ai_gesture()
        else:
             print("Please type in a correct number")
 
@@ -51,6 +51,22 @@ class Game:
         'Spock' > 'Rock'
         'Rock' > 'Scissors'
     
+    def round_winner(self):
+        if player1.human_choice > player2.AI_choice:
+            player1.score += 1
+        elif player1.human_choice < player2.AI_choice:
+            player2.score += 1
+        elif player1.human_choice > player3.human_choice:
+            player1.score += 1
+        elif player1.human_choice < player3.human_choice:
+            player3.score += 1
+        elif player2.AI_choice > player4.AI_choice:
+            player2.score += 1
+        elif player2.AI_choice < player4.AI_choice:
+            player4.score += 1
+
+
+
 
 
 
