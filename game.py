@@ -65,7 +65,26 @@ class Game:
         elif player2.AI_choice < player4.AI_choice:
             player4.score += 1
 
+    def display_winner(self):
+        if player1.score == 2:
+            print('Congratulations you won the RPSLS game!!! ')
+        elif player2.score == 2:
+            print('Congratulations you won the RPSLS game!!! ')
+        elif player3.score == 2:
+            print('Congratulations you won the RPSLS game!!! ')
+        elif player4.score == 2:
+            print('Congratulations you won the RPSLS game!!! ')
 
+    def run(self):
+        self.display_welcome()
+        print('')
+        self.display_rules()
+        print('')
+        self.player_choice()
+        self.choose_winner()
+        while self.round_winner() < 2:
+            self.round_winner
+        self.display_winner()
 
 
 
