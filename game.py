@@ -39,7 +39,7 @@ class Game:
             print("Please type in a correct number")
 
     
-    def choose_winner(self):
+    def compare_choice(self):
         'Scissors' > 'Paper'
         'Paper' > 'Rock'
         'Rock' > 'Lizard'
@@ -74,6 +74,7 @@ class Game:
             print('Congratulations you won the RPSLS game!!! ')
         elif player4.score == 2:
             print('Congratulations you won the RPSLS game!!! ')
+    
 
     def run(self):
         self.display_welcome()
@@ -81,16 +82,129 @@ class Game:
         self.display_rules()
         print('')
         self.player_choice()
-        self.choose_winner()
-        while self.round_winner() < 2:
-            self.round_winner
+        self.compare_choice()
+        self.round_winner
         self.display_winner()
 
 
-
-
-        
-            
-        
-        
-
+    def test_compare_turns(self):
+        if player1 == 'Scissors' and player2 == 'Paper':
+            player1.score += 1 
+        elif player2 == "Scissos" and player1 == 'Paper':
+            player2.score += 1
+        elif player1 == 'Scissors' and player3 == 'Paper':
+            player1.score +=1 
+        elif player3 == 'Scissors' and player1 == 'Paper':
+            player3.score += 1
+        elif player2 == "Scissors" and player4 == 'Paper':
+            player2.score += 1
+        elif player4 == "Scissors" and player2 == 'Paper':
+            player4.score += 1   
+        elif player1 == 'Paper' and player2 == 'Rock':
+            player1.score += 1 
+        elif player2 == "Paper" and player1 == 'Rock':
+            player2.score += 1
+        elif player1 == 'Paper' and player3 == 'Rock':
+            player1.score +=1 
+        elif player3 == 'Paper' and player1 == 'Rock':
+            player3.score += 1
+        elif player2 == "Paper" and player4 == 'Rock':
+            player2.score += 1
+        elif player4 == "Paper" and player2 == 'Rock':
+            player4.score += 1
+        elif player1 == 'Rock' and player2 == 'Lizard':
+            player1.score += 1 
+        elif player2 == "Rock" and player1 == 'Lizard':
+            player2.score += 1
+        elif player1 == 'Rock' and player3 == 'Lizard':
+            player1.score +=1 
+        elif player3 == 'Rock' and player1 == 'Lizard':
+            player3.score += 1
+        elif player2 == "Rock" and player4 == 'Lizard':
+            player2.score += 1
+        elif player4 == "Rock" and player2 == 'Lizard':
+            player4.score += 1        
+        elif player1 == 'Lizard' and player2 == 'Spock':
+            player1.score += 1 
+        elif player2 == "Lizard" and player1 == 'Spock':
+            player2.score += 1
+        elif player1 == 'Lizard' and player3 == 'Spock':
+            player1.score +=1 
+        elif player3 == 'Lizard' and player1 == 'Spock':
+            player3.score += 1
+        elif player2 == "Lizard" and player4 == 'Spock':
+            player2.score += 1
+        elif player4 == "Lizard" and player2 == 'Spock':
+            player4.score += 1
+        elif player1 == 'Spock' and player2 == 'Scissors':
+            player1.score += 1 
+        elif player2 == "Spock" and player1 == 'Scissors':
+            player2.score += 1
+        elif player1 == 'Spock' and player3 == 'Scissors':
+            player1.score +=1 
+        elif player3 == 'Spock' and player1 == 'Scissors':
+            player3.score += 1
+        elif player2 == "Spock" and player4 == 'Scissors':
+            player2.score += 1
+        elif player4 == "Spock" and player2 == 'Scissors':
+            player4.score += 1       
+        elif player1 == 'Scissors' and player2 == 'Lizard':
+            player1.score += 1 
+        elif player2 == "Scissors" and player1 == 'Lizard':
+            player2.score += 1
+        elif player1 == 'Scissors' and player3 == 'Lizard':
+            player1.score +=1 
+        elif player3 == 'Scissors' and player1 == 'Lizard':
+            player3.score += 1
+        elif player2 == "Scissors" and player4 == 'Lizard':
+            player2.score += 1
+        elif player4 == "Scissors" and player2 == 'Lizard':
+            player4.score += 1
+        elif player1 == 'Lizard' and player2 == 'Paper':
+            player1.score += 1 
+        elif player2 == "Lizard" and player1 == 'Paper':
+            player2.score += 1
+        elif player1 == 'Lizard' and player3 == 'Paper':
+            player1.score +=1 
+        elif player3 == 'Lizard' and player1 == 'Paper':
+            player3.score += 1
+        elif player2 == "Lizard" and player4 == 'Paper':
+            player2.score += 1
+        elif player4 == "Lizard" and player2 == 'Paper':
+            player4.score += 1
+        elif player1 == 'Paper' and player2 == 'Spock':
+            player1.score += 1 
+        elif player2 == "Paper" and player1 == 'Spock':
+            player2.score += 1
+        elif player1 == 'Paper' and player3 == 'Spock':
+            player1.score +=1 
+        elif player3 == 'Paper' and player1 == 'Spock':
+            player3.score += 1
+        elif player2 == "Paper" and player4 == 'Spock':
+            player2.score += 1
+        elif player4 == "Paper" and player2 == 'Spock':
+            player4.score += 1
+        elif player1 == 'Spock' and player2 == 'Rock':
+            player1.score += 1 
+        elif player2 == "Spock" and player1 == 'Rock':
+            player2.score += 1
+        elif player1 == 'Spock' and player3 == 'Rock':
+            player1.score +=1 
+        elif player3 == 'Spock' and player1 == 'Rock':
+            player3.score += 1
+        elif player2 == "Spock" and player4 == 'Rock':
+            player2.score += 1
+        elif player4 == "Spock" and player2 == 'Rock':
+            player4.score += 1
+        elif player1 == 'Rock' and player2 == 'Scissors':
+            player1.score += 1 
+        elif player2 == "Rock" and player1 == 'Scissors':
+            player2.score += 1
+        elif player1 == 'Rock' and player3 == 'Scissors':
+            player1.score +=1 
+        elif player3 == 'Rock' and player1 == 'Scissors':
+            player3.score += 1
+        elif player2 == "Rock" and player4 == 'Scissors':
+            player2.score += 1
+        elif player4 == "Rock" and player2 == 'Scissors':
+            player4.score += 1
