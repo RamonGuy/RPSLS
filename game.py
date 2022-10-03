@@ -24,19 +24,24 @@ class Game:
         print('Rock crushes Scissors')
 
     def player_choice(self):
-       user_input = int(input("How many players will be playing? 1, 2, or 3 for a surprise!!!!! "))
-       print('')
-       if user_input == 1:
-            player1.human_gesture()
-            player2.ai_gesture()
-       elif user_input == 2:
-            player1.human_gesture()
-            player3.human_gesture()
-       elif user_input == 3:
-            player2.ai_gesture()
-            player4.ai_gesture()
-       else:
-            print("Please type in a correct number")
+        while True == True:
+         user_input = int(input("How many players will be playing? 1, 2, or 3 for a surprise!!!!! "))
+         print('')
+         if user_input == 1:
+                player1.human_gesture()
+                player2.ai_gesture()
+                True == False
+         elif user_input == 2:
+                player1.human_gesture()
+                player3.human_gesture()
+                True == False
+         elif user_input == 3:
+                player2.ai_gesture()
+                player4.ai_gesture()
+                True == False
+         else:
+                print("Please type in a correct number")
+                True == True
 
     
     def compare_choice(self):
@@ -51,19 +56,21 @@ class Game:
         'Spock' > 'Rock'
         'Rock' > 'Scissors'
     
-    def round_winner(self):
-        if player1.human_choice > player2.AI_choice:
-            player1.score += 1
-        elif player1.human_choice < player2.AI_choice:
-            player2.score += 1
-        elif player1.human_choice > player3.human_choice:
-            player1.score += 1
-        elif player1.human_choice < player3.human_choice:
-            player3.score += 1
-        elif player2.AI_choice > player4.AI_choice:
-            player2.score += 1
-        elif player2.AI_choice < player4.AI_choice:
-            player4.score += 1
+    # I am sure I can do something with this method. I just need to find a way to use it correctly
+
+    # def round_winner(self): # 
+    #     if player1.human_choice > player2.AI_choice:
+    #         player1.score += 1
+    #     elif player1.human_choice < player2.AI_choice:
+    #         player2.score += 1
+    #     elif player1.human_choice > player3.human_choice:
+    #         player1.score += 1
+    #     elif player1.human_choice < player3.human_choice:
+    #         player3.score += 1
+    #     elif player2.AI_choice > player4.AI_choice:
+    #         player2.score += 1
+    #     elif player2.AI_choice < player4.AI_choice:
+    #         player4.score += 1
 
     def display_winner(self):
         if player1.score == 2:
@@ -83,7 +90,7 @@ class Game:
         print('')
         self.player_choice()
         self.compare_choice()
-        self.round_winner
+        self.test_compare_turns
         self.display_winner()
 
 
